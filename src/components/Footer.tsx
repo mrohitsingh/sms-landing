@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Twitter, Linkedin, Facebook, Github } from "lucide-react";
 
 export default function Footer() {
   const categories = [
@@ -55,10 +56,18 @@ export default function Footer() {
               The next-generation multi-tenant ERP for educational institutions. Cloud-based, secure, and built for scale.
             </p>
             <div className="flex gap-4">
-              {/* Social icons placeholders */}
-              <div className="h-5 w-5 bg-muted rounded"></div>
-              <div className="h-5 w-5 bg-muted rounded"></div>
-              <div className="h-5 w-5 bg-muted rounded"></div>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitter className="h-5 w-5" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Github className="h-5 w-5" />
+              </Link>
             </div>
           </div>
           
